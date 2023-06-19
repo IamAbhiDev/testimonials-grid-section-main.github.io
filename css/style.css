@@ -49,8 +49,8 @@ body {
 }
 
 .container__testimonial {
-    padding: 1.9rem;
     border-radius: .5rem;
+    padding: 1.9rem;
 }
 
 .container__testimonial:not(:first-child) {
@@ -58,7 +58,10 @@ body {
 }
 
 .container__testimonial-1 {
-    background: var(--moderate-violet);
+    background: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 25px;
+    background-color: var(--moderate-violet);
     color: var(--white);
 }
 
@@ -82,6 +85,46 @@ body {
     color: var(--very-dark-blackish-blue);
 }
 
+.container__testimonial-1 .container__testimonial__status {
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.container__testimonial-2 .container__testimonial__status {
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.container__testimonial-3 .container__testimonial__status {
+    color: hsla(217, 30%, 14%, 0.5);
+}
+
+.container__testimonial-4 .container__testimonial__status {
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.container__testimonial-5 .container__testimonial__status {
+    color: hsla(217, 30%, 14%, 0.5);
+}
+
+.container__testimonial-1 .container__testimonial__text {
+    color: hsla(0, 0%, 100%, 0.7);
+}
+
+.container__testimonial-2 .container__testimonial__text {
+    color: hsla(0, 0%, 100%, 0.7);
+}
+
+.container__testimonial-3 .container__testimonial__text {
+    color: hsla(217, 30%, 14%, 0.7);
+}
+
+.container__testimonial-4 .container__testimonial__text {
+    color: hsla(0, 0%, 100%, 0.7);
+}
+
+.container__testimonial-5 .container__testimonial__text {
+    color: hsla(217, 30%, 14%, 0.7);
+}
+
 .container__testimonial__profile {
     display: flex;
     align-items: center;
@@ -93,12 +136,21 @@ body {
     border-radius: 50%;
 }
 
+.container__testimonial-1 .container__testimonial__img {
+    border: 3px solid hsla(0, 0%, 100%, 0.3);
+}
+
+.container__testimonial-4 .container__testimonial__img {
+    border: 3px solid var(--moderate-violet);
+}
+
 .container__testimonial__profile__user {
     margin-left: 1rem;
 }
 
 .container__testimonial__name {
     font-size: .8rem;
+    line-height: 1.3;
 }
 
 .container__testimonial__status {
@@ -107,8 +159,13 @@ body {
 
 .container__testimonial__title {
     font-size: 1.25rem;
+    padding-right: .1rem;
+    margin-top: 1rem;
 }
 
 .container__testimonial__text {
     font-size: 0.8125rem;
+    line-height: 1.4;
+    padding-right: 1rem;
+    margin-top: 1rem;
 }
